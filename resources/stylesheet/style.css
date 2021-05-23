@@ -1,21 +1,49 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;600&display=swap');
+
+:root {
+    --main-color: #6B6589; 
+    --accent-color: #d1ad8b;
+}
 
 body {
     background-color: aliceblue;
+    margin: 0;
 }
 
 header {
-    
+    text-align: center;
 }
 
+/*Menu*/
 nav {
-    background-color: #6B6589;
-    color: #d1ad8b;
-    text-decoration: none;
-    font-family: 'KoHo', sans-serif;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
 }
 
+nav a {
+    color: var(--accent-color);
+    margin: 0px 40px 0px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: aliceblue;
+}
+
+.active {
+    text-decoration: underline;
+    padding: 5px;
+}
+
+/*Footer*/
 footer  {
-    background-color: #6B6589;
+    background-color: var(--main-color);
 }
