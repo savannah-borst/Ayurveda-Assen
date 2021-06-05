@@ -2,48 +2,125 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@400;600&display=swap');
 
 :root {
-    --main-color: #6B6589; 
-    --accent-color: #d1ad8b;
+    --main-color: #201F1D; 
+    --accent-color: #CB9B17;
+    --text-color: rgba(255, 255, 255, 25);
 }
 
 body {
-    background-color: aliceblue;
+    background-color: rgba(255, 255, 255, 25);
     margin: 0;
 }
 
+h1 {
+    color: var(--accent-color)
+}
+
+h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+}
+
+p {
+    color: var(--main-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+/*Header*/
 header {
     text-align: center;
 }
 
-/*Menu*/
-nav {
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
+header img {
+    margin: 15px;
 }
 
-nav a {
-    color: var(--accent-color);
-    margin: 0px 40px 0px 40px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'KoHo', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    color: aliceblue;
-}
-
+/*Side menu*/
 .active {
     text-decoration: underline;
     padding: 5px;
 }
 
-/*Footer*/
-footer  {
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
     background-color: var(--main-color);
+    overflow-x: hidden;
+    transition: 0.5;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-transform: uppercase;
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    display: block;
+}
+
+.sideclick {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    font-size: 50px;
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+/*Footer*/
+footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section {
+    margin: 15px;
+}
+
+footer h3, footer p, footer h4 {
+    color: var(--text-color);
+}
+
+/*Responsive*/
+@media screen and (min-width: 768px) {
+    /*Nav*/
+    nav {
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+    }
+    
+    nav a {
+        margin: 0px 40px 0px 40px;
+        text-transform: uppercase;
+        font-family: 'KoHo', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
 }
