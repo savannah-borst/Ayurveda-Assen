@@ -62,12 +62,24 @@ header img {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 10px 10px 10px 32px;
     text-transform: uppercase;
     font-family: 'KoHo', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     display: block;
+}
+
+.sidenav a:hover {
+    color: var(--text-color);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .sideclick {
