@@ -43,6 +43,10 @@ header img {
 }
 
 /*Side menu*/
+nav {
+    display: none;
+}
+
 .active {
     text-decoration: underline;
     padding: 5px;
@@ -110,8 +114,15 @@ footer h3, footer p, footer h4 {
 }
 
 /*Responsive*/
-@media screen and (min-width: 768px) {
-    /*Nav*/
+@media screen and (min-width: 768px) {   
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .sideclick {
+        display: none;
+    }
+
     nav {
         background-color: var(--main-color);
         display: flex;
@@ -127,10 +138,6 @@ footer h3, footer p, footer h4 {
         font-weight: bold;
         font-size: 1rem;
     }
-}
-
-@media screen and (min-width: 1024px) {
-
 }
 
 @media screen and (min-width: 1440px) {
