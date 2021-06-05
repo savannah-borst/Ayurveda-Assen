@@ -33,8 +33,31 @@ a:hover {
     color: var(--text-color);
 }
 
+/*Grid*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12 ,1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+/*Social balk*/
+.social {
+    grid-row: 1;
+    height: 50px;
+    grid-column: 1 / span 13;
+    background-color: var(--main-color);   
+}
+
+.social img {
+    height: 30px;
+    margin: 10px;
+}
+
 /*Header*/
 header {
+    grid-row: 2;
+    height: 100px;
+    grid-column: 1 / span 13;
     text-align: center;
 }
 
@@ -98,6 +121,7 @@ nav {
 
 /*Footer*/
 footer {
+    grid-column: 1 / span 13;
     background-color: var(--main-color);
     display: flex;
     flex-direction: row;
@@ -124,6 +148,7 @@ footer h3, footer p, footer h4 {
     }
 
     nav {
+        grid-column: 1 / span 13;
         background-color: var(--main-color);
         display: flex;
         justify-content: space-around;
