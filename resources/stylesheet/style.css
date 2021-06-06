@@ -32,6 +32,7 @@ a {
     color: var(--accent-color);
     text-decoration: none;
     font-family: 'Roboto';
+    cursor: pointer;
 }
 
 a:hover {
