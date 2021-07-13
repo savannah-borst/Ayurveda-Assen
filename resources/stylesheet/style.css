@@ -46,6 +46,16 @@ a:hover {
     grid-template-rows: auto;
 }
 
+/*alt logo*/
+.altlogo {
+    position: absolute;
+}
+
+.altlogo img {
+    height: 60px;
+    margin: 5px 20px;
+}
+
 /*Social balk*/
 .topbalk {
     grid-row: 1;
@@ -73,9 +83,12 @@ a:hover {
 /*Header*/
 header {
     grid-row: 2;
-    height: 175px;
+    height: 300px;
     grid-column: 1 / span 13;
     text-align: center;
+    background-image: url(../images/pexels-mareefe-672046.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
 header img {
