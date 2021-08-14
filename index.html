@@ -13,6 +13,11 @@
 
           <header>
             <img src="./resources/images/FinalLogoAyurveda2.png" alt="logo-Ayurveda-Assen">
+            <div class="header-slogan">
+              <p>When diet is wrong, medicine is of no use.</p>
+              <p>When diet is correct, medicine is of no need.</p>
+            </div>
+            
           </header>
 
           <div class="altlogo">
@@ -39,7 +44,7 @@
           </nav>
 
           <div class="sidenav" id="mySideNav">
-            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="closebtn" id="closenav">&times;</a>
             <a class="active" href="./index.html">Home</a>
             <a href="">Ayurveda</a>
             <a href="">Behandelingen</a>
@@ -47,16 +52,40 @@
             <a href="">Contact</a>
           </div>
 
-          <p class="sideclick" onclick="openNav()">&#9776;</p>
+          <p class="sideclick" id="opennav">&#9776;</p>
 
           <!--Hier komt de overzicht knoppen met plaatjes.-->
+          <div class="main1">
+            <h2>Holistisch</h2>
+            <p>
+              Ayurveda is een holistische leefwijze. Wat zorgt voor een gezonder en vitaler leven. Deze gaat uit van eenheid van lichaam, geest en ziel die elkaar voortdurend beïnvloeden.
+              De mens wordt als een geheel beschouwd en kan niet los gezien worden van zijn
+              omgeving.
+            </p>
+          </div>
+          <div class="main2">
+            <h2>Is Ayurveda nog toepasbaar?</h2>
+            <p>
+              Ayurveda is zeer toepasbaar in onze huidige maatschapij. Onze moderne geneeskunde is voornamelijk gericht op het bestrijden van
+              symptomen. Ayurveda heeft ten doel zowel ziekten te genezen als preventief ziekte
+              te voorkomen vanaf de basis. Ons lichaam geeft subtiele signalen door over wat het
+              nodig heeft.</p>
+          </div>
 
           <footer>
               <section class="footcontact">
                   <h3>Contact</h3>
-                  <a href="https://goo.gl/maps/1WtBm5V9e4jbhfiD8" target="_blank">Libelkleuven 99,<br> 9403 ZD, Assen</a>
-                  <a href="tel:0641467706">06-41467706</a>
-                  <a href="mailto:">email?</a>
+                  <ul class="contact-list">
+                    <li>
+                      <a href="https://goo.gl/maps/1WtBm5V9e4jbhfiD8" target="_blank">Libelkleuven 99,<br> 9403 ZD, Assen</a>
+                    </li>
+                    <li>
+                      <a href="tel:0641467706">06-41467706</a>
+                    </li>
+                    <li>
+                      <a href="mailto:">info@ayurveda-assen.nl</a>
+                    </li>
+                  </ul>
               </section>
 
               <section class="footsocial">
@@ -70,5 +99,7 @@
               </div>
           </footer>
           </div>
+
+          <script src="./resources/script/script.js"></script>
       </body>
   </html>
