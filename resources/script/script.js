@@ -1,26 +1,22 @@
-function openNavFunction() {
-    sideNav.style.width = '50%';
-}
 
-function closeNavFunction() {
-    sideNav.style.width = "0%";
-}
+window.addEventListener('load', () => {
 
-const navClose = document.getElementById("closenav");
-const navOpen = document.getElementById("opennav");
-const sideNav = document.getElementById("mySideNav");
+    function openNavFunction() {
+        sideNav.style.width = '50%';
+    }
+    
+    function closeNavFunction() {
+        sideNav.style.width = "0%";
+    }
+    
+    const navClose = document.getElementById("closeNav");
+    const navOpen = document.getElementById("openNav");
+    const sideNav = document.getElementById("mySideNav");
+    
+    navOpen.addEventListener('click', openNavFunction)
 
-if (navClose) {
-    navClose.addEventListener('click', event => {
-        closeNavFunction();
-    })
-}
+    navClose.addEventListener('click', closeNavFunction)
 
-if (navOpen) {
-    navOpen.addEventListener('click', event => {
-        openNavFunction();
-    })
-}
-
+})
 
 
