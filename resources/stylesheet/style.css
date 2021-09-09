@@ -34,13 +34,15 @@ a {
     text-decoration: none;
     font-family: 'Roboto';
     cursor: pointer;
+    transition-duration: 0.3s;
 }
 
 a:hover {
     color: var(--text-color);
+    transition-duration: 0.3s;
 }
 
-/*top balk*/
+/*social balk*/
 .altlogo {
     position: absolute;
     left: 1rem;
@@ -52,21 +54,29 @@ a:hover {
 }
 
 .social {
-    height: 100px;
+    height: 50px;
     background-color: var(--main-color);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .social a {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+#space {
+    margin-right: 15rem;
 }
 
 .fas, .fab {
     margin-right: 1rem;
     font-size: 1.5rem;
+}
+
+.hidden {
+    display: flex;
 }
 
 /*logo/img/slogan*/
@@ -91,16 +101,34 @@ a:hover {
     color: var(--main-color);
 }
 
-/*Side menu*/
+/*Main navigation*/
 nav {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+
+nav, nav a {
     display: none;
+}
+
+nav a {
+    margin: 0 4rem 0 4rem;
+    text-transform: uppercase;
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .active {
     color: var(--text-color);
-    padding: 5px;
+    text-decoration: overline;
 }
 
+/*Side navigation*/
 .sidenav {
     height: 100%;
     width: 0%;
@@ -123,10 +151,6 @@ nav {
     display: block;
 }
 
-.sidenav a:hover {
-    color: var(--text-color);
-}
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -147,37 +171,37 @@ nav {
 }
 
 /*main*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
 .main1 {
-    grid-column: 1 / span 13;
-    display: block;
+    width: 80%;
     text-align: center;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-top: 50px;
+    margin-bottom: 2rem;
 }
 
 .main2 {
-    grid-column: 1 / span 13;
-    display: block;
     text-align: center;
-    margin-left: 350px;
-    margin-right: 350px;
-    margin-top: 50px;
+    width: 80%;
 }
 
 
 /*Footer*/
 footer {
-    grid-column: 1 / span 13;
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
 }
 
 footer section {
-    margin: 15px;
+    margin: 2rem 0 2rem 0;
 }
 
 footer h3 {
@@ -220,39 +244,17 @@ footer iframe {
 
 @media screen and (min-width: 1024px) {
 
-    /*Socialbalk*/
-    .hidden {
-        display: flex;
-    }
-
-    .social {
-        height: 75px;
-    }
-
     .social a {
         font-size: 15px;
     }
     
     /*nav*/
-    .sideclick {
-        display: none;
+    nav, nav a {
+        display: flex;
     }
 
-    nav {
-        grid-column: 1 / span 13;
-        background-color: var(--main-color);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 50px;
-    }
-    
-    nav a {
-        margin: 0px 40px 0px 40px;
-        text-transform: uppercase;
-        font-family: 'KoHo', sans-serif;
-        font-weight: bold;
-        font-size: 1rem;
+    .sideclick {
+        display: none;
     }
 
     /*footer*/
