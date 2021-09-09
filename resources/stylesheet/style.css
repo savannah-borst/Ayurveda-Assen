@@ -66,10 +66,6 @@ a:hover {
     justify-content: center;
 }
 
-#space {
-    margin-right: 15rem;
-}
-
 .fas, .fab {
     margin-right: 1rem;
     font-size: 1.5rem;
@@ -109,7 +105,6 @@ nav {
     justify-content: center;
     height: 50px;
 }
-
 
 nav, nav a {
     display: none;
@@ -163,12 +158,14 @@ nav a {
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 15px;
-    margin-left: 40px;
-    font-size: 50px;
+    margin-top: 1rem;
+    margin-left: 1rem;
     color: var(--accent-color);
     cursor: pointer;
 }
+ .sideclick .fas {
+     font-size: 1.8rem;
+ }
 
 /*main*/
 main {
@@ -196,21 +193,16 @@ footer {
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: top;
+    align-items: center;
 }
 
 footer section {
     margin: 2rem 0 2rem 0;
+    text-align: center;
 }
 
 footer h3 {
     color: var(--text-color);
-    font-size: 28px;
-}
-
-footer a {
-    font-size: 25px;
 }
 
 .contact-list {
@@ -222,18 +214,14 @@ footer a {
 .footcontact a {
     display: flex;
     align-items: center;
-    margin: 10px 0px;
-}
-
-.footsocial a {
-    font-size: 30px;
-    margin: 0px 5px;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
 footer iframe {
-    width: 600px;
+    width: 100%;
     height: 250px;
-    margin: 25px;
+    margin: 2rem;
     border: 0;
 }
 
@@ -244,10 +232,11 @@ footer iframe {
 
 @media screen and (min-width: 1024px) {
 
-    .social a {
-        font-size: 15px;
+    /*Social Balk*/
+    .hidden {
+        display: flex;
     }
-    
+
     /*nav*/
     nav, nav a {
         display: flex;
@@ -258,20 +247,18 @@ footer iframe {
     }
 
     /*footer*/
-    footer a {
-        font-size: 16px ;
-    }
-
-    footer h3 {
-        font-size: 18.72px;
-    }
-
-    .footsocial a {
-        font-size: 22px;
-    }
-
     footer {
         flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start
+    }
+
+    footer section {
+        text-align: left;
+    }
+
+    .footcontact a {
+        justify-content: left;
     }
 }
 
