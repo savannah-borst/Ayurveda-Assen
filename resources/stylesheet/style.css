@@ -54,7 +54,7 @@ a:hover {
 }
 
 .social {
-    height: 50px;
+    height: 60px;
     background-color: var(--main-color);
     display: flex;
     justify-content: space-evenly;
@@ -142,7 +142,7 @@ nav a {
     text-transform: uppercase;
     font-family: 'KoHo', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
     display: block;
 }
 
@@ -150,16 +150,14 @@ nav a {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 60px;
+    font-size: 2.5rem;
     margin-left: 50px;
 }
 
 .sideclick {
     position: fixed;
     top: 0;
-    left: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    left: 1.2rem;
     color: var(--accent-color);
     cursor: pointer;
 }
