@@ -43,16 +43,6 @@ a:hover {
 }
 
 /*social balk*/
-.altlogo {
-    position: absolute;
-    left: 1rem;
-    top: 8px;
-}
-
-.altlogo img {
-    height: 60px;
-}
-
 .social {
     height: 60px;
     background-color: var(--main-color);
@@ -111,7 +101,7 @@ nav, nav a {
 }
 
 nav a {
-    margin: 0 4rem 0 4rem;
+    margin: 0 2rem 0 2rem;
     text-transform: uppercase;
     font-family: 'KoHo', sans-serif;
     font-weight: bold;
@@ -170,11 +160,11 @@ nav a {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 3rem 0 3rem 0;
 }
 
+/*main home page*/
 .main1 {
     width: 80%;
     text-align: center;
@@ -185,6 +175,20 @@ main {
     text-align: center;
     width: 80%;
 }
+
+/*main ayurveda page*/
+.veda, .dosha, .pitta, .kapha, .vata, .spijsvertering {
+    width: 50%;
+}
+
+section .fas {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+}
+/*main behandelingen page*/
+/*main vedapulse page*/
+/*main over mij page*/
+/*main contact*/
 
 
 /*Footer*/
@@ -217,14 +221,22 @@ footer h3 {
     margin-bottom: 1rem;
 }
 
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
 footer iframe {
     width: 100%;
-    height: 250px;
+    height: 300px;
     margin: 2rem;
     border: 0;
 }
 
 /*Responsive*/
+/*from 768px on*/
 @media screen and (min-width: 768px) {   
     #hidden {
         display: flex;
@@ -235,6 +247,7 @@ footer iframe {
     }
 }
 
+/*from 1024px on*/
 @media screen and (min-width: 1024px) {
 
     /*Social Balk*/
@@ -265,8 +278,21 @@ footer iframe {
     .footcontact a {
         justify-content: left;
     }
+
+    .map {
+        width: 40%;
+    }
 }
 
+/*from 1440px on*/
 @media screen and (min-width: 1440px) {
-
+    
+    /*footer*/
+    footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .map {
+        width: 35%;
+    }
 }
