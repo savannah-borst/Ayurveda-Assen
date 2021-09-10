@@ -71,8 +71,8 @@ a:hover {
     font-size: 1.5rem;
 }
 
-.hidden {
-    display: flex;
+#hidden {
+    display: none;
 }
 
 /*logo/img/slogan*/
@@ -144,6 +144,7 @@ nav a {
     font-weight: bold;
     font-size: 1.2rem;
     display: block;
+    margin: 0.5rem;
 }
 
 .sidenav .closebtn {
@@ -225,7 +226,9 @@ footer iframe {
 
 /*Responsive*/
 @media screen and (min-width: 768px) {   
-    
+    #hidden {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 1024px) {
