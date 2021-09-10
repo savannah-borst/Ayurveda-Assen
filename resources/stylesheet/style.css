@@ -91,8 +91,8 @@ a:hover {
 .slogan p {
     font-family: 'KoHo', sans-serif;
     font-weight: 600;
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 1.2rem;
+    margin: 0 1rem 0 1rem;
     padding: 0;
     color: var(--main-color);
 }
@@ -228,6 +228,10 @@ footer iframe {
 @media screen and (min-width: 768px) {   
     #hidden {
         display: flex;
+    }
+
+    .slogan p {
+        font-size: 1.5rem;
     }
 }
 
