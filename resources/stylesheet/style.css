@@ -146,7 +146,7 @@ nav a {
 }
 
 .sideclick {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 1.2rem;
     color: var(--accent-color);
@@ -167,24 +167,26 @@ main {
 
 /*main ayurveda page*/
 main section {
-    width: 50%;
+    width: 80%;
     text-align: left;
     margin-bottom: 2rem;
 }
 
 main hr {
-    width: 30%;
+    width: 40%;
     border: 1px solid var(--accent-color);
     margin: 3rem;
 }
 
-main .fas {
-margin-left: 1rem;
+main .fas, main h2, main h3 {
+display: flex;
+justify-content: center;
 }
 
-section .fas {
+main .fas {
     color: var(--accent-color);
     font-size: 2.5rem;
+    margin-left: 1rem;
 }
 /*main behandelingen page*/
 /*main vedapulse page*/
@@ -246,6 +248,11 @@ footer iframe {
     .slogan p {
         font-size: 1.5rem;
     }
+
+    /*main section*/
+    main section {
+        width: 60%;
+    }
 }
 
 /*from 1024px on*/
@@ -263,6 +270,11 @@ footer iframe {
 
     .sideclick {
         display: none;
+    }
+
+    /*main*/
+    main section {
+        width: 35%;
     }
 
     /*footer*/
