@@ -21,18 +21,18 @@ h1 {
 
 h2, h3, h4, h5, h6 {
     color: var(--accent-color);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     color: var(--main-color);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
     color: var(--accent-color);
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     cursor: pointer;
     transition-duration: 0.3s;
 }
@@ -183,10 +183,26 @@ display: flex;
 justify-content: center;
 }
 
+main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 main .fas {
     color: var(--accent-color);
     font-size: 2.5rem;
     margin-left: 1rem;
+}
+
+main td {
+    padding-right: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+main td:first-child {
+    font-weight: 600;
+    color: var(--accent-color);
 }
 /*main behandelingen page*/
 /*main vedapulse page*/
