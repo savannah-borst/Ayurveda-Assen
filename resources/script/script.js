@@ -18,5 +18,3 @@ window.addEventListener('load', () => {
     navClose.addEventListener('click', closeNavFunction)
 
 })
-
-
